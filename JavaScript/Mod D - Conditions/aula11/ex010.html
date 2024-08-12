@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sistema de Velocidade</h1>
+    Velocidade do Carro <input type="number" name="" id="velocidade"> KM/H
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res"> 
+
+    </div>
+    <script>
+        function calcular(){
+            var verificar = document.getElementById("verificar")
+            var V = document.getElementById("velocidade")
+            var res = document.getElementById("res")
+            var Velocidade = Number(V.value)
+
+            res.innerHTML=`<br> A tua velocidade atual é de <strong> ${Velocidade}KM/H </strong>`
+            
+            if (Velocidade >= 60){
+                window.alert(`Com a tua velocidade de ${Velocidade}KM/H que está acima dos 60KM/H foste multado`)
+            }else{
+                window.alert(`Velocidade dentro da lei, velocidade de ${Velocidade} KM/H`)
+            }
+   
+            } </script>
+</body>
+</html>

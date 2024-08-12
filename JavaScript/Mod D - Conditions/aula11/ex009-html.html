@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de País</title>
+</head>
+<body>
+    <h1>Verificador de País</h1>
+    Insere o país de nascença: <input type="text" id="inputPais">
+    <input type="button" value="Verificar" id="inputButton" onclick="verificarPais()">
+    <div id="texto"></div>
+
+    <script>
+        function verificarPais(){
+            var pais = document.getElementById("inputPais").value;  // Obtém o valor do input
+            var texto = document.getElementById("texto");
+
+            if (pais === "portugal"){  // Ignora maiúsculas e minúsculas na comparação
+                texto.innerHTML = `Como tu és de ${pais}, tu és Português.`;
+            } else {
+                texto.innerHTML = `Como tu és de ${pais}, tu és estrangeiro.`;
+            }
+        }
+    </script>
+</body>
+</html>
