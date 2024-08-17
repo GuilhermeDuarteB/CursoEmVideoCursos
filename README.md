@@ -1,1 +1,1 @@
-All the "Curso em Video" curses that I learned and trained, separated by language.
+All the exercises I do to study, separated by language.
