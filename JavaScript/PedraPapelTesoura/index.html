@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Exercicio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <h1>Pedra Papel Tesoura</h1>
+        </header>
+
+        <section>
+                <div id="opcoes">
+                    <p>Seleciona uma jogada.</p>   
+                    <button id="pedra" onclick="pedraF()">
+                    <img src="imgs/pedra.png" alt="">
+                    </button>
+
+                    <button id="papel" onclick="papelF()">
+                    <img src="imgs/papel.png" alt="">
+                  </button>
+
+                  <button id="tesoura" onclick="tesouraF()">
+                    <img src="imgs/tesoura.png" alt="">
+                </button>
+                </div>
+
+                <div id="resultado" >
+                    <img id="img" alt="">
+                    <p id="mensagem"></p>
+                </div>
+        </section>
+
+        <footer>
+            <p>&copy; Criado por GuilhermeBranco</p>
+        </footer>
+        <script src="script.js"></script>
+</body>
+</html>
