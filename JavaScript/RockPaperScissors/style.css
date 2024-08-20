@@ -38,3 +38,24 @@ footer{
     margin-top: 5%;
     margin-bottom: 5%;
 }
+
+#contador{
+   word-spacing: 50px;
+    text-align: center;
+}
+
+#opcoes{
+    font-size: 30px;
+}
+
+#contadorP{
+    margin-right: 30%;
+    text-align: center;
+    margin-top:-11%;
+    float: right;
+}
+
+#contadorC{
+    margin-left: -30%;
+    text-align: center;
+}
